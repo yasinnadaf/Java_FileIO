@@ -1,17 +1,17 @@
 package com.bridgelabz.fileio;
 
-public class EmployeePayroll {
+public class EmployeePayrollData {
     private int id;
     private String name;
-    private int salary;
+    private double salary;
 
-    public EmployeePayroll(int id, String name, int salary) {
+    public EmployeePayrollData(int id, String name, double salary) {
         this.id = id;
         this.name = name;
         this.salary = salary;
     }
+    public EmployeePayrollData(){
 
-    public EmployeePayroll() {
     }
 
     public int getId() {
@@ -30,17 +30,17 @@ public class EmployeePayroll {
         this.name = name;
     }
 
-    public int getSalary() {
+    public double getSalary() {
         return salary;
     }
 
-    public void setSalary(int salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
 
     @Override
     public String toString() {
-        return "EmployeePayroll{" +
+        return "Employee{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", salary=" + salary +
